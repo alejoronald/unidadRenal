@@ -22726,7 +22726,7 @@ footer {
 .hero {
   position: relative;
   height: 100vh; /* o el alto que desees */
-  background-image: url('/images/Unidades.png'); /* Reemplaza con tu ruta */
+  background-image: url('./images/Unidades.png'); /* Reemplaza con tu ruta */
   background-size: cover;
   background-position: center;
   display: flex;
