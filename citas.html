@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Unidad Renal - Citas</title>
+    
+    
+    
+    <link rel="stylesheet" href="css/stylesF.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleIndex.css">
+    
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <img src="images/Logo.jpg" alt="Logo Salud Renal">
+                    
+                </div>
+                <div class="contact-info">
+                    <p>
+                        <a href="https://wa.me/+573106194398" target="_blank" style="display: flex; align-items: center; text-decoration: none;">
+                            <img src="images/icons8-whatsapp.svg" alt="WhatsApp" style="width: 40px; height: 40px; margin-right: 10px; vertical-align: middle;">
+                            <span> <strong>Hable con nosotros</strong></span>
+                        </a>
+                    </p>
+                    
+                    <p style="display: flex; align-items: center;">
+                        <a href="mailto:unidadrenalamazonia@gmail.com?subject=Consulta%20Salud%20Renal&body=Hola,%20quisiera%20más%20información%20sobre..." style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                            <img src="images/correo-electronico.png" alt="Email" style="width: 35px; height: 35px; margin-right: 10px;">
+                            <span><strong>Email</strong></span>
+                        </a>
+                    </p>
+                </a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <div class="navbar">
+                    <ul class="nav-links">
+                        <li><a href="index.html">INICIO</a></li>
+                        <li>
+                            <a href="about.html">NUESTRA INSTITUCIÓN</a>
+                            <div class="dropdown">
+                                <a href="about.html">HISTORIA</a>
+                                <a href="about.html">MISIÓN</a>
+                                <a href="about.html">VISIÓN</a>
+                                <a href="#">INFORMACIÓN CORPORATIVA</a>
+                                
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <a href="Portafolio.html">NUESTROS SERVICIOS</a>
+                            <div class="dropdown">
+                                <a href="hemodialisis.html">HEMODIÁLISIS</a>
+                                <a href="Dialisis.html">DIÁLISIS PERITONEAL</a>
+                                <a href="Nefroproteccion.html">PROGRAMA DE PROTECCIÓN RENAL</a>
+                                <a href="Servicios.html">SERVICIO FARMACÉUTICO</a>
+                                <a href="#">CONSULTA EXTERNA</a>
+                            </div>
+                        </li>
+                        <li><a href="#">ÁREAS DE APOYO</a>
+                            <div class="dropdown">
+                                <!--a href="#">NUTRICIÓN</a>
+                                <a href="#">PSICOLOGIA</a>
+                                <a href="#">TRABAJO SOCIAL</a-->
+                                <a href="SIAU.html">SIAU</a>
+                                
+                            </div></li>
+                        <li><a href="Destacados.html">DESTACADOS</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="PQRSF.html">PQRSF</a></li>
+                        <li><a href="Actividades.html">ACTIVIDADES DE BIENESTAR</a></li>
+                        
+                    </ul>
+                    <div class="mobile-toggle">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <h1>FORMULARIO AGENDAMIENTO DE CITAS</h1>
+                
+            </div>
+        </div>
+    </section>
+
+ 
+    <div class="container">
+        <section class="form-section">
+            <div class="form-header">
+                <h2>AGENDA TU CITA</h2>
+                <p>Por favor, completa los siguientes datos para programar tu cita.</p>
+            </div>
+            
+            <form id="appointmentForm" class="appointment-form">
+                <h3>Información Personal</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombreCompleto">📌 Nombre completo</label>
+                        <input type="text" id="nombreCompleto" name="nombreCompleto" required pattern="[A-Za-zÁ-ÿ\s]+" title="Solo letras">
+                    </div>
+                    <div class="form-group">
+                        <label for="tipoDocumento">📌 Tipo de documento</label>
+                        <select id="tipoDocumento" name="tipoDocumento" required>
+                            <option value="">Seleccionar</option>
+                            <option value="CC">Cédula de Ciudadanía</option>
+                            <option value="CE">Cédula de Extranjería</option>
+                            <option value="PP">Pasaporte</option>
+                            <option value="OT">Otro</option>
+                        </select>
+                        <input type="text" id="otroDocumento" name="otroDocumento" placeholder="Especifique" style="display:none; margin-top: 5px;">
+                    </div>
+                </div>
+    
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="numeroDocumento">📌 Número de documento</label>
+                        <input type="text" id="numeroDocumento" name="numeroDocumento" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nacionalidad">📌 Nacionalidad</label>
+                        <input type="text" id="nacionalidad" name="nacionalidad" required>
+                    </div>
+                </div>
+    
+                <h3>Datos de Contacto</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="direccion">📌 Dirección</label>
+                        <input type="text" id="direccion" name="direccion" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="celular">📌 Número de celular</label>
+                        <input type="tel" id="celular" name="celular" required pattern="\d{10}" title="10 dígitos">
+                    </div>
+                </div>
+    
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="correoElectronico">📌 Correo electrónico</label>
+                        <input type="email" id="correoElectronico" name="correoElectronico" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactoFamiliar">📌 Número de contacto familiar</label>
+                        <input type="tel" id="contactoFamiliar" name="contactoFamiliar" required pattern="\d{10}" title="10 dígitos">
+                    </div>
+                </div>
+    
+                <h3>Información de Salud</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="eps">📌 EPS (APB)</label>
+                        <input type="text" id="eps" name="eps" required>
+                    </div>
+                </div>
+    
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fechaCita">📅 Fecha solicitada</label>
+                        <input type="date" id="fechaCita" name="fechaCita" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="horaCita">⏰ Hora solicitada</label>
+                        <div class="time-selection">
+                            <input type="time" id="horaCita" name="horaCita" required>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="form-group">
+                    <label for="comentariosAdicionales">📄 Comentarios adicionales</label>
+                    <textarea id="comentariosAdicionales" name="comentariosAdicionales" rows="3"></textarea>
+                </div>
+    
+                <div class="form-notification">
+                    <p>🔹 <em>Nos comunicaremos contigo para confirmar la cita.</em></p>
+                </div>
+    
+                <div class="form-group terms-group">
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <label for="terminos">Acepto términos y condiciones</label>
+                </div>
+    
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Solicitar Cita</button>
+                </div>
+            </form>
+        </section>
+    </div>
+    
+    <div id="errorModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <p id="errorMessage"></p>
+        </div>
+    </div>
+    
+    <div id="successModal" class="modal">
+        <div class="modal-content success">
+            <span class="close-btn">&times;</span>
+            <div class="success-icon">✓</div>
+            <h3>¡Solicitud Enviada!</h3>
+            <p>Hemos recibido tu solicitud de cita. Te contactaremos pronto para confirmar.</p>
+        </div>
+    </div>
+        </div>
+    </section>
+
+  
+    <!-- Acerca de Nosotros -->
+    <section class="about" id="nosotros">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    
+                    
+                </div>
+                <div class="about-image">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 style="color: white; font-weight: 700; font-size: 18px;">UNIDAD RENAL DE LA AMAZONÍA</h3>
+                    <p>Su bienestar es nuestro compromiso. Ofrecemos atención especializada para el cuidado de su salud renal.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/people/Salud-Renal-SA/100070317007769/" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                                <!--a href="#" aria-label="Google"><i class="fab fa-google"></i></a-->
+                <a href="https://www.bing.com/ck/a?!&&p=9b1ac064cdb6c11789c8735dcc516d3646e58ad12093bba8db9660672a0f5765JmltdHM9MTc0MDk2MDAwMA&ptn=3&ver=2&hsh=4&fclid=0264e9e2-78a4-6737-39c1-fc78790b661c&psq=instagram%40salud+renal.a&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9zYWx1ZHJlbmFsc2wv&ntb=1" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/salud-renal-s-a/?viewAsMember=true " aria-label="Linkedin"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 style="color: white; font-weight: 700; font-size: 18px;">SERVICIOS</h3>
+                    <ul class="footer-links">
+                        <li><a href="hemodialisis.html">Hemodiálisis</a></li>
+                        <li><a href="Dialisis.html">Diálisis Peritoneal</a></li>
+                        <li><a href="Nefroproteccion.html">Programa de Protección Renal</a></li>
+                        <li><a href="#">Servicio Farmacéutico</a></li>
+                        <li><a href="#">Consulta Externa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 style="color: white; font-weight: 700; font-size: 18px;">LINKS</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="Portafolio.html">Servicios</a></li>
+                        <li><a href="about.html">Nosotros</a></li>
+                        <li><a href="SIAU.html">SIAU</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 style="color: white; font-weight: 700; font-size: 18px;">CONTACTO</h3>
+                    <ul class="footer-links">
+                        <li><i class="fa fa-map-marker"></i> Calle 4 No. 5 - 50 Barrio Colombia, Leticia - Amazonia</li>
+                        <li><i class="fa fa-phone"></i> 3102874569</li>
+                        <li><i class="fa fa-envelope"></i> unidadrenalamazonia@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2025 Unidad Renal de la Amazonía. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Scroll animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Función para comprobar si un elemento está en el viewport
+            function isInViewport(element) {
+                const rect = element.getBoundingClientRect();
+                return (
+                    rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.8 &&
+                    rect.bottom >= 0
+                );
+            }
+
+            // Función para animar elementos al hacer scroll
+            function animateOnScroll() {
+                // Servicios
+                document.querySelectorAll('.service-card').forEach((card, index) => {
+                    if (isInViewport(card) && !card.classList.contains('animated')) {
+                        card.style.animation = `fadeIn 0.6s forwards ${index * 0.2}s`;
+                        card.classList.add('animated');
+                    }
+                });
+
+                // Acerca de
+                const aboutContent = document.querySelector('.about-content');
+                const aboutImage = document.querySelector('.about-image');
+                if (isInViewport(aboutContent) && !aboutContent.classList.contains('animated')) {
+                    aboutContent.style.animation = 'fadeInLeft 0.8s forwards';
+                    aboutContent.classList.add('animated');
+                }
+                if (isInViewport(aboutImage) && !aboutImage.classList.contains('animated')) {
+                    aboutImage.style.animation = 'fadeInRight 0.8s forwards 0.2s';
+                    aboutImage.classList.add('animated');
+                }
+
+                // Portfolio
+                document.querySelectorAll('.portfolio-item').forEach((item, index) => {
+                    if (isInViewport(item) && !item.classList.contains('animated')) {
+                        item.style.animation = `scaleIn 0.6s forwards ${index * 0.2}s`;
+                        item.classList.add('animated');
+                    }
+                });
+            }
+
+            // Llamar a la función al cargar la página
+            animateOnScroll();
+
+            // Llamar a la función al hacer scroll
+            window.addEventListener('scroll', animateOnScroll);
+        });
+
+        // Smooth scrolling para enlaces internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const headerOffset = 100;
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Cerrar menú móvil si está abierto
+                    document.querySelector('.nav-links').classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html
