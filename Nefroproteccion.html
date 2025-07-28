@@ -8,7 +8,80 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styleIndex.css">
     
-    
+ <style>
+    .hero {
+  position: relative;
+  height: 100vh; /* o el alto que desees */
+  background-image: url('./images/Unidades.png'); /* Reemplaza con tu ruta */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 123, 255, 0.5), rgba(0, 123, 255, 0.5)); /* Azul translúcido */
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  transform: translateY(2px)
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+}
+
+.hero::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(255, 255, 255, 0.6); /* Ajusta la transparencia aquí */
+z-index: 1;
+}
+
+.hero .container {
+position: relative;
+z-index: 2;
+text-align: center;
+color: #333;
+padding: 20px;
+max-width: 800px;
+}
+
+.white-text {
+    color: white;
+    font-size: 20PX
+}
+
+.container4 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+</style>   
    
     
 </head>
